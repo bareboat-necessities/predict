@@ -5984,7 +5984,7 @@ char *string, *outputfile;
 				Calc();
 
 				if (Decayed(indx,daynum)==0)
-					fprintf(fd,"%ld %s %4d %4d %4d %4d %4d %6ld %6ld %c\n",start,Daynum2String(daynum),iel,iaz,ma256,isplat,isplong,irk,rv,findsun);
+					fprintf(fd,"%ld %s %4d %4d %7.3f %7.3f %4d %6ld %6ld %c\n",start,Daynum2String(daynum),iel,iaz,ma256,sat_lat,sat_lon,irk,rv,findsun);
 				break;
 			}
 
@@ -5998,7 +5998,7 @@ char *string, *outputfile;
 					Calc();
 
 					if (Decayed(indx,daynum)==0)
-						fprintf(fd,"%ld %s %4d %4d %4d %4d %4d %6ld %6ld %c\n",count,Daynum2String(daynum),iel,iaz,ma256,isplat,isplong,irk,rv,findsun);
+						fprintf(fd,"%ld %s %4d %4d %7.3f %7.3f %4d %6ld %6ld %c\n",count,Daynum2String(daynum),iel,iaz,ma256,sat_lat,sat_lon,irk,rv,findsun);
 				}
 				break;
 			}
